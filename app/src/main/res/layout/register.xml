@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:id="@+id/coordinatorLayout"
+    android:orientation="vertical"
+    android:background="#dddcdc">
+
+<RelativeLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/imageView2"
+        android:src="@drawable/efel"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/textView2"
+        android:background="@color/dark_slate_blue"
+
+        />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp">
+
+        <EditText
+            style="@style/txtin"
+            android:hint="@string/name"
+            android:id="@+id/name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+           />
+        <EditText
+            android:hint="@string/email"
+            style="@style/txtin"
+            android:layout_marginTop="10dp"
+            android:id="@+id/email"
+
+            />
+        <EditText
+            android:hint="@string/pass"
+            style="@style/txtin"
+            android:inputType="textPassword"
+            android:id="@+id/password"
+            android:layout_marginTop="10dp"
+            />
+        <Button
+            android:background="@drawable/recrblue"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="ثبت نام"
+            android:textColor="@color/white"
+            android:id="@+id/btnRegister"
+            android:layout_marginTop="20dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="قبلا ثبت نام کرده ام"
+            android:id="@+id/btnLinkToLoginScreen"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+        />
+    </LinearLayout>
+</RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

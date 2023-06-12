@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:id="@+id/coordinatorLayout"
+    android:orientation="vertical"
+    android:background="#dddcdc">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/imageView2"
+        android:src="@drawable/efel"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/textView2"
+        android:background="@color/dark_slate_blue"
+        />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingRight="20dp"
+        android:gravity="center"
+        android:paddingLeft="20dp">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="90dp"
+            android:id="@+id/imageView3"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/sign"
+            android:padding="10dp" />
+
+        <EditText
+            android:hint="@string/email"
+            style="@style/txtin"
+            android:id="@+id/email"
+            android:layout_marginTop="30dp"
+            />
+
+        <EditText
+            android:hint="@string/pass"
+            style="@style/txtin"
+            android:inputType="textPassword"
+            android:id="@+id/password"
+            android:layout_marginTop="10dp"
+            />
+        <Button
+            android:background="@drawable/recrblue"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="ورود به حساب کاربری"
+            android:textColor="@color/white"
+            android:id="@+id/btnLogin"
+            android:layout_marginTop="20dp" />
+
+
+
+        <TextView
+            android:id="@+id/btnLinkToRegisterScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ایجاد حساب کاربری"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="20dp" />
+
+    </LinearLayout>
+</RelativeLayout>
+    </android.support.design.widget.CoordinatorLayout>
